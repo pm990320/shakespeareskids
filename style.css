@@ -4,13 +4,6 @@
     font-size: 7vw;
 }
 
-body {
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 100vh;
-}
-
 #navmenu {
     margin-bottom: 4%;
 }
@@ -20,6 +13,8 @@ body {
     padding: 4px;
     width: 60%;
     max-width: 60%;
+
+    /*background-color: rgba(255, 255, 255, 0.35);*/
 }
 
 #side_content {
@@ -27,10 +22,68 @@ body {
     padding: 4px;
     width: 37%;
     max-width: 37%;
+    border-radius: 5px;
 
-    background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.6));
 }
 
 #footer {
-    margin-top: 20px;
+    margin-top: 7%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#footer > p {
+    font-family: Times;
+}
+
+.fb-activity, .fb-activity iframe[style], .fb-activity span {
+    width: 100% !important;
+    /*height: 40vh !important;*/
+}
+
+.fb-like, .fb-like iframe[style], .fb-like span {
+    width: 100% !important;
+    height: 4vh !important;
+    vertical-align: center !important;
+}
+
+#bgimg {
+    width: 90vw;
+    display: inline-block;
+
+    opacity:0.5;
+}
+
+#bgimgwrapper {
+    text-align: center;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin-right: 5vw;
+    margin-left: 5vw;
+
+    height: 100%;
+}
+
+body {
+    padding-top: 20vh;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, small {
+    font-family: Rancho;
+}
+
+a, p {
+    font-size: 14pt;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

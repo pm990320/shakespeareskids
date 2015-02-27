@@ -14,12 +14,9 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Pompiere|Rancho' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <script type="text/javascript">
-        $('body').css('background', "linear-gradient(to bottom, rgba(255,255,255,0.0),rgba(255,255,255,0.0)), url('" + <?php echo get_template_directory_uri(); ?> + "/img/scroll.png')");
-    </script>
-
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -27,19 +24,24 @@
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1374412376212948&pages=1&page=239296332794155&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
 
-
+    <div id="bgimgwrapper">
+        <img id="bgimg" class="noselect" src="<?php echo get_template_directory_uri(); ?>/img/scroll_better.jpg" alt="scroll">
+    </div>
+    
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2">
 
                 <header class="row text-center">
-                    <h1 id="header">Shakespeare's Kids</h1>
+                    <h1 id="header" class="noselect">Shakespeare's Kids</h1>
                 </header>
 
                 <nav class="row" id="navmenu">
-                    <ul class="nav nav-pills nav-justified">
+                    <ul class="nav nav-pills nav-justified noselect">
+                        <!-- Requires WP Bootstrap Menu plugin -->
                         <?php if (function_exists('getNavMenu')): ?>
                             <?php echo getNavMenu('mainmenu'); ?>
                         <?php endif; ?>
@@ -48,11 +50,7 @@
 
                 <div class="row">
                     <aside id="side_content">
-                        <div class="fb-activity" data-app-id="1374412376212948" data-site="developers.facebook.com" data-action="likes, recommends" data-colorscheme="light" data-header="true"></div>
-
-                        <div style="margin-top:5%">
-                            <div class="fb-like" data-href="https://www.facebook.com/ShakespearesKids" data-width="200" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
-                        </div>
+                        <?php get_sidebar(); ?>
                     </aside>
 
                     <article id="content">

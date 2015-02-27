@@ -10,9 +10,9 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width">
 
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() + 'js/bootstrap.js' ?>"></script>
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() + '/css/bootstrap.css' ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() + '/css/style.css' ?>">
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 </head>
 <body>
     <div id="fb-root"></div>

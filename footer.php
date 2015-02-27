@@ -1,4 +1,5 @@
-				</article>
+					</article>
+				</div>
 
 				<footer class="row">
 					<p>Copyright (C) Sharon McNally</p>

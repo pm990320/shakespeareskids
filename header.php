@@ -1,51 +1,54 @@
-<?php
-/**
- * The template for displaying the header
- *
- * Displays all of the head element and everything up until the "site-content" div.
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js">
+<!-- 
+     * Shakespeare's Kids
+     * Copyright (C) Sharon McNally
+     *
+     * Developed by: Patrick Menlove  patrickmenlove@hotmail.co.uk  GitHub: pm990320
+-->
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<!--[if lt IE 9]>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
-	<![endif]-->
-	<script>(function(){document.documentElement.className='js'})();</script>
-	<?php wp_head(); ?>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width">
+
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() + 'js/bootstrap.js' ?>"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() + '/css/bootstrap.css' ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() + '/css/style.css' ?>">
+
+    <?php wp_head(); ?>
 </head>
+<body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1374412376212948&pages=1&page=239296332794155&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
-<body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 
-	<div id="sidebar" class="sidebar">
-		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
-				<?php
-					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif;
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
 
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
-					<?php endif;
-				?>
-				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
-			</div><!-- .site-branding -->
-		</header><!-- .site-header -->
+                <header class="row text-center">
+                    <h1 id="header">Shakespeare's Kids</h1>
+                </header>
 
-		<?php get_sidebar(); ?>
-	</div><!-- .sidebar -->
+                <nav class="row" id="navmenu">
+                    <ul class="nav nav-pills nav-justified">
+                        <?php if (function_exists('getNavMenu')): ?>
+                            <?php echo getNavMenu('mainmenu'); ?>
+                        <?php endif; ?>
+                    </ul>
+                </nav>
 
-	<div id="content" class="site-content">
+                <aside class="row" id="side_content">
+                    <div class="fb-activity" data-app-id="1374412376212948" data-site="developers.facebook.com" data-action="likes, recommends" data-colorscheme="light" data-header="true"></div>
+
+                    <div style="margin-top:5%">
+                        <div class="fb-like" data-href="https://www.facebook.com/ShakespearesKids" data-width="200" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+                    </div>
+                </aside>
+
+                <article class="row" id="content">

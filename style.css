@@ -3,27 +3,33 @@
     font-family: Papyrus;
     font-size: 7vw;
 }
+#subheading {
+    font-family: Pompiere;
+    font-size: 4vw;
+    color: darkred;
+}
 
 #navmenu {
     margin-bottom: 4%;
 }
 
 #content {
-    float: left;
+    /*float: left;*/
     padding: 4px;
-    width: 60%;
-    max-width: 60%;
+    /*width: 75%;*/
 
     /*background-color: rgba(255, 255, 255, 0.35);*/
 }
 
 #side_content {
     float: right;
-    padding: 4px;
-    width: 37%;
+    padding: 10px;
+    margin: 25px;
+    width: 25%;
     max-width: 37%;
     border-radius: 5px;
 
+    background-color: rgba(0, 71, 228, 0.3);
 }
 
 #footer {
@@ -38,7 +44,6 @@
 
 .fb-activity, .fb-activity iframe[style], .fb-activity span {
     width: 100% !important;
-    /*height: 40vh !important;*/
 }
 
 .fb-like, .fb-like iframe[style], .fb-like span {
@@ -72,7 +77,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, a, small {
-    font-family: Rancho;
+    font-family: Tahoma;
 }
 
 a, p {

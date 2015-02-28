@@ -38,6 +38,7 @@
 
                 <header class="row text-center">
                     <h1 id="header" class="noselect">Shakespeare's Kids</h1>
+                    <h1 id="subheading">Bringing literature to life!</h1>
                 </header>
 
                 <nav class="row" id="navmenu">
@@ -50,8 +51,9 @@
                 </nav>
 
                 <div class="row">
-                    <aside id="side_content">
-                        <?php get_sidebar(); ?>
-                    </aside>
-
                     <article id="content">
+                        <aside id="side_content">
+                            <?php get_sidebar(); ?>
+                        </aside>
+
+                    

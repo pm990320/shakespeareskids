@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Shakespeare's Kids & Little Shakespeares's</title>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width">
 

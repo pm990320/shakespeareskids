@@ -1,44 +1,22 @@
 <?php get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php if ( have_posts() ) : // if search content found ?>
 
-		<?php if ( have_posts() ) : ?>
+	<header>
+		<h2>Search Results for: <span style="color:red"><?php echo get_search_query(); ?></span></h2>
+	</header>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s'), get_search_query() ); ?></h1>
-			</header><!-- .page-header -->
+		<?php
+		while ( have_posts() ) : the_post(); 
 
-			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post(); ?>
+			get_template_part( 'content', 'search' );
 
-				<?php
-				/*
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'content', 'search' );
+		endwhile;
 
-			// End the loop.
-			endwhile;
+	else :
+		get_template_part( 'content', 'none' );
 
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
-
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
+	endif;
+?>
 
 <?php get_footer(); ?>

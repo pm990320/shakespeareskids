@@ -14,19 +14,14 @@
 }
 
 #content {
-    /*float: left;*/
     padding: 4px;
-    /*width: 75%;*/
-
-    /*background-color: rgba(255, 255, 255, 0.35);*/
 }
 
 #side_content {
     float: right;
     padding: 10px;
     margin: 25px;
-    width: 25%;
-    max-width: 37%;
+    width: 30%;
     border-radius: 5px;
 
     background-color: rgba(0, 71, 228, 0.3);

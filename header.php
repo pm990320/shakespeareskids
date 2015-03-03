@@ -29,7 +29,7 @@
     }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <div id="bgimgwrapper">
+    <div id="bgimgwrapper" class="hidden-xs">
         <img id="bgimg" class="noselect" src="<?php echo get_template_directory_uri(); ?>/img/scroll_better.jpg" alt="scroll">
     </div>
     
@@ -37,24 +37,36 @@
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2">
 
-                <header class="row text-center">
+                <header class="row text-center hidden-xs">
                     <h1 id="header" class="noselect">Shakespeare's Kids</h1>
-                    <h1 id="subheading">Bringing literature to life!</h1>
+                    <h1 id="subheading" class="noselect hidden-sm">Bringing literature to life!</h1>
                 </header>
 
-                <nav class="row" id="navmenu">
-                    <ul class="nav nav-pills nav-justified noselect">
-                        <!-- Requires WP Bootstrap Menu plugin -->
-                        <?php if (function_exists('getNavMenu')): ?>
-                            <?php echo getNavMenu('mainmenu'); ?>
-                        <?php endif; ?>
-                    </ul>
-                </nav>
+                <div class="row navbar navbar-default" role="navigation" id="navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".collapseme">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="brand visible-xs" id="smallheader">Shakespeare's Kids</h1>
+                    </div>
+                    <div class="collapse navbar-collapse collapseme" id="navmenu" style="border:none;outline:none;">
+                        <ul class="nav nav-pills nav-justified noselect">
+                            <!-- Requires WP Bootstrap Menu plugin -->
+                            <?php if (function_exists('getNavMenu')): ?>
+                                <?php echo getNavMenu('mainmenu'); ?>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
+                </div><!-- div.row -->
 
                 <div class="row">
+                    <aside id="side_content" class="hidden-xs hidden-sm">
+                        <?php get_sidebar(); ?>
+                    </aside>
                     <article id="content">
-                        <aside id="side_content">
-                            <?php get_sidebar(); ?>
-                        </aside>
+                        
 
                     

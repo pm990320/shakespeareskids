@@ -16,4 +16,4 @@
 			<div class="fb-like" data-href="https://www.facebook.com/ShakespearesKids" data-width="10vh" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
 		</div>
 	</div>
-</div><!-- div.container -->
+</div>

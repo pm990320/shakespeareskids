@@ -64,8 +64,8 @@
                     </div>
                 </div><!-- div.row -->
 
-                <div class="row">
-                    <aside id="side_content" class="hidden-xs hidden-sm">
+                <div class="row" id="content-row">
+                    <aside id="side-content" class="hidden-xs sidebar text-center">
                         <?php get_sidebar(); ?>
                     </aside>
                     <article id="content">

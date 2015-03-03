@@ -5,11 +5,6 @@
 					<div class="row">
 						<p>Copyright <span class="glyphicon glyphicon-copyright-mark"></span> Sharon McNally</p>
 					</div>
-
-					<div class="row visible-xs">
-
-					</div>
-
 				</footer>
 
 			</div>

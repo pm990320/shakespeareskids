@@ -2,15 +2,27 @@
     color: red;
     font-family: Papyrus;
     font-size: 7vw;
+
+    margin-top: 6%;
 }
 #subheading {
     font-family: Pompiere;
     font-size: 4vw;
     color: darkred;
 }
+#smallheader {
+    color: red;
+    font-family: Papyrus;
+    font-size: 16pt;
+}
 
 #navmenu {
     margin-bottom: 4%;
+}
+
+#navbar {
+    background-color: transparent;
+    border-color: transparent;
 }
 
 #content {
@@ -19,12 +31,15 @@
 
 #side_content {
     float: right;
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: 25px;
-    width: 30%;
+    /*width: 30%;*/
     border-radius: 5px;
 
     background-color: rgba(0, 71, 228, 0.3);
+
+    font-family: Helvetica;
 }
 
 #footer {
@@ -43,8 +58,7 @@
 
 .fb-like, .fb-like iframe[style], .fb-like span {
     width: 100% !important;
-    height: 4vh !important;
-    vertical-align: center !important;
+    /*vertical-align: center !important;*/
 }
 
 #bgimg {
@@ -67,10 +81,6 @@
     height: 100%;
 }
 
-body {
-    padding-top: 20vh;
-}
-
 h1, h2, h3, h4, h5, h6, p, a, small {
     font-family: Tahoma;
 }
@@ -86,4 +96,13 @@ a, p {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.search-button {
+    margin-left: 5px;
+}
+
+form#searchform > div > input,
+form#searchform > div > button {
+    background-color: #dddddd;
 }

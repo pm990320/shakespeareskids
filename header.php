@@ -10,12 +10,13 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width">
     <title><?php wp_title(); ?></title>
-
+    
+    <link href='http://fonts.googleapis.com/css?family=Pompiere|Bilbo|Tangerine' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
-    <link href='http://fonts.googleapis.com/css?family=Pompiere|Bilbo|Tangerine' rel='stylesheet' type='text/css'>
+    
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
     <?php wp_head(); ?>

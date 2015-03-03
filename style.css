@@ -1,19 +1,19 @@
 #header {
     color: red;
-    font-family: Papyrus;
-    font-size: 7vw;
+    font-family: Bilbo;
+    font-size: 10vw;
 
     margin-top: 6%;
 }
 #subheading {
-    font-family: Pompiere;
+    font-family: Tangerine;
     font-size: 4vw;
     color: darkred;
 }
 #smallheader {
     color: red;
-    font-family: Papyrus;
-    font-size: 16pt;
+    font-family: Bilbo;
+    font-size: 24pt;
 }
 
 #navmenu {
@@ -105,4 +105,8 @@ a, p {
 form#searchform > div > input,
 form#searchform > div > button {
     background-color: #dddddd;
+}
+
+body {
+    background-color: #FFE9BF;
 }

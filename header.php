@@ -15,9 +15,9 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
-    <link href='http://fonts.googleapis.com/css?family=Pompiere|Rancho' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pompiere|Bilbo|Tangerine' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
-    
+
     <?php wp_head(); ?>
 </head>
 <body>
@@ -32,7 +32,7 @@
     </script>
 
     <div id="bgimgwrapper" class="hidden-xs">
-        <img id="bgimg" class="noselect" src="<?php echo get_template_directory_uri(); ?>/img/scroll_better.jpg" alt="scroll">
+        <img id="bgimg" class="noselect" src="<?php echo get_template_directory_uri(); ?>/img/scroll_better.png" alt="scroll">
     </div>
     
     <div class="container-fluid">

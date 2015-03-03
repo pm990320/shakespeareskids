@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
     <link href='http://fonts.googleapis.com/css?family=Pompiere|Rancho' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+    
     <?php wp_head(); ?>
 </head>
 <body>

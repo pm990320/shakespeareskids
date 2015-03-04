@@ -1,13 +1,10 @@
 (function($, viewport){
 
-    // Do the same, but only after document has loaded
     $(document).ready(function() {
         if( viewport.is('sm') ) {
             $('#side-content').appendTo('#content-row');
             $('#side-content').removeClass('desktop-sidebar');
             $('#side-content').addClass('mobile-sidebar');
-        } else {
-            $('#side-content').addClass('desktop-sidebar');
         }
     });
 

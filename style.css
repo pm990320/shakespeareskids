@@ -113,3 +113,20 @@ form#searchform > div > button {
 body {
     background-color: #FFE9BF;
 }
+
+.btn-register {
+    background-color: green;
+    border-color: darkgreen;
+    color: #FFF;
+    font-style: bold;
+    font-size: 20pt;
+    font-family: Verdana;
+    font-variant: none;
+    margin-bottom: 7px;
+}
+.btn-register:hover {
+    color: #eee;
+}
+.btn-register:active {
+    color: #fff;
+}

@@ -4,4 +4,5 @@
 	register_nav_menu( 'mainmenu', __( 'mainmenu', 'shakespeareskids' ) );
 
 	add_theme_support( 'html5', array( 'search-form' ) );
+	add_theme_support( 'post-thumbnails' ); 
 ?>

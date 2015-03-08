@@ -31,6 +31,14 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var img = $('img.attachment-thumbnail.wp-post-image');
+        img.addClass('media-object');
+        img.removeClass('attachment-thumbnail');
+        img.removeClass('wp-post-image');
+    });
+    </script>
 
     <div id="bgimgwrapper" class="hidden-xs">
         <img id="bgimg" class="noselect" src="<?php echo get_template_directory_uri(); ?>/img/scroll_better.png" alt="scroll">

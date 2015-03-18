@@ -115,9 +115,9 @@ body {
 }
 
 .btn-register {
-    background-color: green;
-    border-color: darkgreen;
-    color: #FFF;
+    background-color: #34BD2F;
+    border-color: #1D821A;
+    color: #000;
     font-style: bold;
     font-size: 20pt;
     font-family: Verdana;
@@ -125,8 +125,8 @@ body {
     margin-bottom: 7px;
 }
 .btn-register:hover {
-    color: #eee;
+    color: #222;
 }
 .btn-register:active {
-    color: #fff;
+    color: #111;
 }

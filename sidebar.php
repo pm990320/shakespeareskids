@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<div class="col-xs-12">
 		<div class="row">
-			<a class="btn btn-register" href="<?php echo get_page_link(57); ?>">Register Today</a>
+			<a class="btn btn-register" href="<?php echo get_permalink( get_page_by_title( 'Register' ) ) ?>">Register Today</a>
 		</div>
 
 		<div class="row">

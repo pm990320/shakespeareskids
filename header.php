@@ -75,7 +75,7 @@
 
                 <div class="row" id="content-row">
                     <aside id="side-content" class="hidden-xs sidebar desktop-sidebar text-center">
-                        <?php if(!is_page('Register') && !is_page('Contact')):
+                        <?php if(!is_page('Register') && !is_page('Contact') && !is_page('Gallery')):
                                 get_sidebar(); 
                             endif;
                         ?>

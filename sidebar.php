@@ -7,7 +7,9 @@
 		</div>
 
 		<div class="row">
-			<?php get_search_form() ?>
+			<div class="col-xs-12">
+				<?php get_search_form() ?>
+			</div>
 		</div>
 
 		<div class="row">

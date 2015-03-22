@@ -131,3 +131,8 @@ body {
 .btn-register:active {
     color: #111;
 }
+
+.nosidepadding {
+    padding-left: 0px;
+    padding-right: 0px;
+}

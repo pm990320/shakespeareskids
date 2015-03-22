@@ -123,6 +123,7 @@ body {
     font-family: Verdana;
     font-variant: none;
     margin-bottom: 7px;
+    width: 100%;
 }
 .btn-register:hover {
     color: #222;
